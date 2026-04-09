@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Stay In Motion | Premium Travel Agency Nigeria</title>
+    <meta name="description" content="Experience luxury travel with Stay In Motion. Expert in local Nigerian flights and international journeys. Visa assistance, curated packages, 24/7 support.">
+    <meta name="theme-color" content="#C5A059">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- PREMIUM LOADER -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">SIM</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-wrapper">
+                    <span class="logo-main">STAY IN MOTION</span>
+                    <span class="logo-sub">Travel and Tours</span>
+                </div>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu">
+                <li class="close-menu"><i class="fas fa-times"></i></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="visa.html">Visa</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1920">
+            <source src="https://videos.pexels.com/video-files/3048543/3048543-uhd_2732_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Welcome to Luxury Travel</span>
+            <h1 class="hero-title">Your Journey Begins <br>With Us</h1>
+            <p class="hero-text">Experience the art of seamless travel. From local escapes to global adventures, we craft journeys that linger in your heart forever.</p>
+            <div class="hero-buttons">
+                <a href="destinations.html" class="btn btn-primary">Explore Destinations <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-outline">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+<!-- SEARCH SECTION -->
+<section class="hero-search">
+    <div class="container">
+        <div class="search-wrapper">
+            <div class="search-tabs">
+                <button class="tab-btn active" data-tab="flights"><i class="fas fa-plane"></i> Flights</button>
+                <button class="tab-btn" data-tab="packages"><i class="fas fa-suitcase"></i> Packages</button>
+                <button class="tab-btn" data-tab="visa"><i class="fas fa-passport"></i> Visa</button>
+            </div>
+            
+            <!-- FLIGHTS FORM - Opens WhatsApp -->
+            <div class="search-form active" id="flights-form">
+                <div class="form-row">
+                    <div class="form-group"><label><i class="fas fa-map-marker-alt"></i> From</label><input type="text" placeholder="Lagos (LOS)" value="Lagos"></div>
+                    <div class="form-group"><label><i class="fas fa-map-marker-alt"></i> To</label><input type="text" placeholder="Where to?"></div>
+                    <div class="form-group"><label><i class="fas fa-calendar"></i> Depart</label><input type="date" value="2025-04-15"></div>
+                    <div class="form-group"><label><i class="fas fa-calendar"></i> Return</label><input type="date" value="2025-04-22"></div>
+                    <div class="form-group"><label><i class="fas fa-users"></i> Travellers</label><select><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option><option>Family</option></select></div>
+                    <button class="search-btn" onclick="window.location.href='https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I%20would%20like%20to%20book%20a%20flight.'"><i class="fas fa-search"></i> Search Flights</button>
+                </div>
+            </div>
+            
+            <!-- PACKAGES FORM - Goes to packages.html -->
+            <div class="search-form" id="packages-form" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group"><label><i class="fas fa-map-marker-alt"></i> Destination</label><select><option>Maldives</option><option>Dubai</option><option>London</option><option>Paris</option><option>Obudu Ranch</option><option>Calabar</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-calendar"></i> Travel Date</label><input type="date" value="2025-04-15"></div>
+                    <div class="form-group"><label><i class="fas fa-clock"></i> Duration</label><select><option>3-5 Days</option><option>5-7 Days</option><option>7-10 Days</option><option>10-14 Days</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-users"></i> Travellers</label><select><option>2 People</option><option>3 People</option><option>4 People</option><option>Family (4+)</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-tag"></i> Budget Range</label><select><option>Budget Friendly</option><option>Standard</option><option>Luxury</option><option>Premium</option></select></div>
+                    <button class="search-btn" onclick="window.location.href='packages.html'"><i class="fas fa-gift"></i> View Packages</button>
+                </div>
+            </div>
+            
+            <!-- VISA FORM - Goes to visa.html -->
+            <div class="search-form" id="visa-form" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group"><label><i class="fas fa-passport"></i> Destination Country</label><select><option>United Kingdom (UK)</option><option>United States (USA)</option><option>Canada</option><option>Schengen (Europe)</option><option>UAE (Dubai)</option><option>Turkey</option><option>Saudi Arabia</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-calendar"></i> Travel Date</label><input type="date" value="2025-04-15"></div>
+                    <div class="form-group"><label><i class="fas fa-id-card"></i> Visa Type</label><select><option>Tourist Visa</option><option>Business Visa</option><option>Student Visa</option><option>Transit Visa</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-users"></i> Applicants</label><select><option>1 Person</option><option>2 People</option><option>3 People</option><option>4+ People</option></select></div>
+                    <div class="form-group"><label><i class="fas fa-clock"></i> Processing</label><select><option>Standard (5-7 days)</option><option>Express (2-3 days)</option><option>Super Express (24hrs)</option></select></div>
+                    <button class="search-btn" onclick="window.location.href='visa.html'"><i class="fas fa-check-circle"></i> Check Requirements</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- POPULAR DESTINATIONS -->
+<section class="destinations">
+    <div class="container">
+        <div class="destinations-header">
+            <div>
+                <span class="section-subtitle">Explore The World</span>
+                <h2 class="section-title">Popular <span>Destinations</span></h2>
+            </div>
+            <a href="destinations.html" class="btn-link">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="destinations-grid">
+            <!-- LAGOS → CALABAR (Large Card) -->
+            <div class="destination-card large">
+                <div class="destination-image-wrapper">
+                    <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Calabar Beach" loading="lazy">
+                    <div class="destination-badge">Local Escape</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>Lagos → Calabar</h3>
+                    <p>Coastal paradise • 5 days recommended</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20Calabar.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+            
+            <!-- DUBAI -->
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dubai" loading="lazy">
+                    <div class="destination-badge">International</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>Dubai</h3>
+                    <p>7 days luxury experience</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20Dubai.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+            
+            <!-- LONDON -->
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <img src="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&w=800" alt="London" loading="lazy">
+                    <div class="destination-badge">International</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>London</h3>
+                    <p>5 days heritage tour</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20London.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+            
+            <!-- OBUDU RANCH -->
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <img src="https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Obudu Ranch" loading="lazy">
+                    <div class="destination-badge">Local Escape</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>Obudu Ranch</h3>
+                    <p>3 days mountain retreat</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20Obudu%20Ranch.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+            
+            <!-- ABUJA -->
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                      <img src="images/abuja.jpg" alt="abuja" loading="lazy">
+                    <div class="destination-badge">Local Escape</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>Abuja</h3>
+                    <p>3 days serenity escape</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20Abuja.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+            
+            <!-- IBADAN -->
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <img src="images/ibadan.jpg" alt="Ibadan" loading="lazy">
+                    <div class="destination-badge">Local Escape</div>
+                </div>
+                <div class="destination-overlay">
+                    <h3>Ibadan</h3>
+                    <p>2 days cultural tour</p>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20visiting%20Ibadan.%20Please%20share%20details." class="btn-destination" target="_blank">Check Price</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- STATS SECTION -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-icon"><i class="fas fa-plane"></i></div><div><span class="stat-number" data-target="15000">0</span><div class="stat-label">Happy Travelers</div></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fas fa-globe-africa"></i></div><div><span class="stat-number" data-target="45">0</span><div class="stat-label">Countries</div></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fas fa-passport"></i></div><div><span class="stat-number" data-target="98">0</span><div class="stat-label">Success Rate</div></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fas fa-clock"></i></div><div><span class="stat-number" data-target="24">0</span><div class="stat-label">Hour Support</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE PACKAGES -->
+    <section class="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Curated Experiences</span>
+                <h2 class="section-title">Signature <span>Travel Packages</span></h2>
+                <p class="section-description">Handpicked luxury experiences tailored to your desires</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card featured">
+                    <div class="package-badge">⭐ Best Seller</div>
+                    <img src="https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maldives" loading="lazy">
+                    <div class="package-content">
+                        <h3>Maldives Paradise Escape</h3>
+                        <div class="package-meta"><span><i class="fas fa-calendar"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> 2 People</span></div>
+                        <p class="package-description">Overwater villa • Private chef • Spa access • All meals included</p>
+                        <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20the%20Maldives%20Escape%20package.%20Please%20share%20details%20and%20availability." class="btn-package" target="_blank"><i class="fab fa-whatsapp"></i> Check Availability</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img src="https://images.pexels.com/photos/1486785/pexels-photo-1486785.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dubai" loading="lazy">
+                    <div class="package-content">
+                        <h3>Dubai Luxury Experience</h3>
+                        <div class="package-meta"><span><i class="fas fa-calendar"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> 2 People</span></div>
+                        <p class="package-description">Burj Khalifa view • Desert safari • 5-star hotel • City tour</p>
+                        <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20the%20Dubai%20package.%20Please%20share%20details%20and%20availability." class="btn-package" target="_blank"><i class="fab fa-whatsapp"></i> Check Availability</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img src="https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Obudu" loading="lazy">
+                    <div class="package-content">
+                        <h3>Obudu Mountain Retreat</h3>
+                        <div class="package-meta"><span><i class="fas fa-calendar"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> 2 People</span></div>
+                        <p class="package-description">Cable car • Mountain resort • Canopy walk • Nature trails</p>
+                        <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20the%20Obudu%20Retreat%20package.%20Please%20share%20details%20and%20availability." class="btn-package" target="_blank"><i class="fab fa-whatsapp"></i> Check Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-wrapper">
+                <div class="features-list">
+                    <div class="feature-item"><div class="feature-icon"><i class="fas fa-check-circle"></i></div><div class="feature-text"><h4>98% Visa Success Rate</h4><p>Expert documentation and processing</p></div></div>
+                    <div class="feature-item"><div class="feature-icon"><i class="fas fa-check-circle"></i></div><div class="feature-text"><h4>24/7 Concierge</h4><p>Personal assistant throughout your journey</p></div></div>
+                    <div class="feature-item"><div class="feature-icon"><i class="fas fa-check-circle"></i></div><div class="feature-text"><h4>Best Price Guarantee</h4><p>Competitive rates on flights and hotels</p></div></div>
+                    <div class="feature-item"><div class="feature-icon"><i class="fas fa-check-circle"></i></div><div class="feature-text"><h4>5-Min WhatsApp Response</h4><p>Instant support when you need it</p></div></div>
+                </div>
+                <div class="ceo-section">
+                    <img src="images/sen.jpg" alt="CEO" class="ceo-image" loading="lazy">
+                    <p class="ceo-quote">"Travel is not just about places. It's about creating memories that last a lifetime."</p>
+                    <div class="ceo-name">Yusuf Ridwanullah</div>
+                    <div class="ceo-title">Founder & CEO</div>
+                    <div class="experience-badge"><i class="fas fa-trophy"></i> 10+ Years Excellence</div>
+                </div>
+            </div>
+            <div class="section-header" style="margin-top: 50px;"><a href="about.html" class="btn btn-primary">Learn More About Us</a></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header"><span class="section-subtitle">Client Experiences</span><h2 class="section-title">What <span>Travelers Say</span></h2></div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active"><div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testimonial-text">"Stay In Motion made our honeymoon absolutely perfect. From Lagos to Maldives, everything was seamless. Exceptional service!"</p><div class="testimonial-author"><div><h4>Adetola Ogunlesi</h4><span>Maldives Escape</span></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testimonial-text">"The visa assistance was incredible. Got my UK visa in 5 days! Highly recommended for international travel."</p><div class="testimonial-author"><div><h4>Babatunde Adeyemi</h4><span>London Business Trip</span></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testimonial-text">"Our family trip to Obudu was organized perfectly. The kids loved it, and we didn't have to worry about anything."</p><div class="testimonial-author"><div><h4>Amara Nwachukwu</h4><span>Family Getaway</span></div></div></div>
+            </div>
+            <div class="testimonial-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+    </section>
+
+    <!-- VISA ASSISTANCE SECTION -->
+    <section class="visa-section">
+        <div class="container">
+            <div class="visa-wrapper">
+                <div class="visa-content">
+                    <span class="section-subtitle">Visa Assistance</span>
+                    <h2 class="section-title">Stress-Free <span>Travel Documentation</span></h2>
+                    <p>From tourist visas to business travel, our experts handle all documentation with a 98% success rate.</p>
+                    <ul class="visa-list"><li><i class="fas fa-check"></i> UK, USA, Schengen, Canada</li><li><i class="fas fa-check"></i> UAE, Turkey, Saudi Arabia</li><li><i class="fas fa-check"></i> Complete document review</li><li><i class="fas fa-check"></i> Interview preparation</li></ul>
+                    <a href="visa.html" class="btn btn-primary">Check Visa Requirements</a>
+                </div>
+           <div class="visa-stats">
+    <div class="stat-circle">
+        <div class="circle-progress" data-value="98">
+            <span>98%</span>
+        </div>
+        <div style="color: #C5A059; font-size: 1rem; font-weight: 600; margin-top: 10px;">Success Rate</div>
+    </div>
+    <div class="stat-circle">
+        <div class="circle-progress" data-value="45">
+            <span>45+</span>
+        </div>
+        <div style="color: #C5A059; font-size: 1rem; font-weight: 600; margin-top: 10px;">Countries</div>
+    </div>
+</div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header"><span class="section-subtitle">Got Questions?</span><h2 class="section-title">Frequently <span>Asked Questions</span></h2></div>
+            <div class="faq-grid">
+                <div class="faq-item"><button class="faq-question">How do I book a flight? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>You can book through our website, WhatsApp, or visit our offices. We'll help you find the best routes and prices.</p></div></div>
+                <div class="faq-item"><button class="faq-question">What documents do I need for visa? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Generally: passport (6+ months validity), photos, bank statements, itinerary, and accommodation proof.</p></div></div>
+                <div class="faq-item"><button class="faq-question">Do you handle local flights only? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>No, we handle both local Nigerian flights and international travel to over 45 countries worldwide.</p></div></div>
+                <div class="faq-item"><button class="faq-question">How fast is your WhatsApp response? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>We typically respond within 5-15 minutes during business hours. Our team is available 24/7 for emergencies.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2>Ready to <span style="color: var(--primary);">Travel?</span></h2>
+                    <div class="info-cards">
+                        <div class="info-card highlight"><i class="fas fa-building"></i><div><h4>🏢 HEAD OFFICE</h4><p>Suits B5, Ibadan Airport, Alaakia, Ibadan</p><p class="office-hours"><i class="fas fa-clock"></i> Mon-Sat: 8am - 7pm</p></div></div>
+                        <div class="info-card"><i class="fas fa-map-marker-alt"></i><div><h4>🏛️ BRANCH OFFICE</h4><p>6, Ibitoye Avenue, Ring Road Ososami, Ibadan</p><p class="office-hours"><i class="fas fa-clock"></i> Mon-Sat: 8am - 6pm</p></div></div>
+                        <div class="info-card"><i class="fas fa-phone-alt"></i><div><h4>24/7 Support</h4><p>+234 805 365 2978</p><p>+234 805 365 2978 (Emergency)</p></div></div>
+                        <div class="info-card"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>stayinmotionenterprise@gmail.com</p></div></div>
+                    </div>
+                    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20trip." class="btn-whatsapp-large" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp <span>Average reply 5min</span></a>
+                </div>
+                <div class="two-maps-container">
+                    <div class="map-card">
+                        <h4><i class="fas fa-building"></i> Head Office - Ibadan Airport</h4>
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9406449221747!2d3.970322073980779!3d7.360550612872671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed45137ea7f7%3A0xcc1375193f56e3ad!2sIbadan%20Airport!5e0!3m2!1sen!2sng!4v174168373865!5m2!1sen!2sng" allowfullscreen="" loading="lazy" title="Head Office Map"></iframe>
+                        </div>
+                        <a href="https://maps.google.com/?q=Suits+B5+Ibadan+Airport+Alaakia+Ibadan" target="_blank" class="btn-directions"><i class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                    <div class="map-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Branch Office - Ring Road</h4>
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.845678!2d3.901234!3d7.387654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d56789abcde%3A0x1234567890abcdef!2s6%20Ibitoye%20Avenue%2C%20Ring%20Road%2C%20Ososami%2C%20Ibadan!5e0!3m2!1sen!2sng!4v174168373865!5m2!1sen!2sng" allowfullscreen="" loading="lazy" title="Branch Office Map"></iframe>
+                        </div>
+                        <a href="https://maps.google.com/?q=6+Ibitoye+Avenue+Ring+Road+Ososami+Ibadan" target="_blank" class="btn-directions"><i class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Start Your Journey Today</h2>
+            <p>Let's plan your perfect escape - whether local or international</p>
+            <a href="contact.html" class="btn btn-primary">Book Free Consultation</a>
+        </div>
+    </section>
+
+ <!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">STAY IN MOTION<span class="footer-logo-sub">Travel and Tours</span></div>
+                <p class="footer-text">Nigeria's premier luxury travel agency, crafting unforgettable journeys since 2015.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="visa.html">Visa Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cancellation.html">Cancellation Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers</p>
+                <form class="newsletter-form" action="https://formsubmit.co/stayinmotionenterprise@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Newsletter Subscriber!">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Stay In Motion Travel and Tours! You'll receive our latest travel updates and exclusive offers.">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p style="font-size: 0.7rem; margin-top: 8px; color: var(--gray);">No spam, unsubscribe anytime.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stay In Motion Travel and Tours. All rights reserved.</p>
+            <p>Created by <a href="https://wa.me/2349074272243?text=Hello%20Rokweb%20Creatives%2C%20I%20would%20like%20to%20build%20a%20professional%20website%20for%20my%20business.%20Kindly%20share%20your%20process%2C%20pricing%2C%20and%20timeline." target="_blank" class="credit-link">Rokweb Creatives</a></p>
+        </div>
+    </div>
+</footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20local%20or%20international%20flight." class="floating-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span class="pulse"></span></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

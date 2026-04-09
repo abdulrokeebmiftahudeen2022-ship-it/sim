@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Travel Packages | Stay In Motion Travel and Tours</title>
+    <meta name="description" content="Discover our curated travel packages - from local Nigerian getaways to international luxury escapes. Book your dream vacation with Stay In Motion.">
+    <meta name="theme-color" content="#C5A059">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader"><div class="loader-content"><div class="loader-logo">SIM</div><div class="loader-bar"></div></div></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><div class="logo-wrapper"><span class="logo-main">STAY IN MOTION</span><span class="logo-sub">Travel and Tours</span></div><span class="logo-dot"></span></a>
+            <ul class="nav-menu">
+                <li class="close-menu"><i class="fas fa-times"></i></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html" class="active">Packages</a></li>
+                <li><a href="visa.html">Visa</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="packages-hero" style="background-image: url('https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="packages-hero-overlay"></div>
+        <div class="container"><div class="packages-hero-content"><span class="packages-hero-subtitle">Curated Experiences</span><h1 class="packages-hero-title">Handpicked <span>Travel Packages</span></h1><p class="packages-hero-text">From weekend getaways to luxury escapes find your perfect journey with us.</p></div></div>
+    </section>
+
+    <section class="featured-package">
+        <div class="container">
+            <div class="featured-wrapper">
+                <div class="featured-badge">⭐ Best Seller</div>
+                <div class="featured-content">
+                    <div class="featured-image"><img src="https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maldives Paradise" loading="lazy"></div>
+                    <div class="featured-info">
+                        <h2>Maldives Paradise Escape</h2>
+                        <p class="featured-location"><i class="fas fa-map-marker-alt"></i> Maldives, Indian Ocean</p>
+                        <div class="featured-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (128 reviews)</span></div>
+                        <div class="featured-duration"><i class="fas fa-calendar"></i> 7 Nights / 8 Days</div>
+                        <div class="featured-inclusions"><h4>What's Included:</h4><div class="inclusion-icons"><span><i class="fas fa-plane"></i> Flight</span><span><i class="fas fa-umbrella-beach"></i> Overwater Villa</span><span><i class="fas fa-utensils"></i> All Meals</span><span><i class="fas fa-spa"></i> Spa Access</span><span><i class="fas fa-ship"></i> Sunset Cruise</span><span><i class="fas fa-passport"></i> Visa Assistance</span></div></div>
+                        <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I'm%20interested%20in%20the%20Maldives%20Paradise%20Escape%20package." class="btn-featured-book" target="_blank"><i class="fab fa-whatsapp"></i> Check Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages-filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-tabs"><button class="filter-btn active" data-filter="all">All Packages</button><button class="filter-btn" data-filter="local">🇳🇬 Local (Nigeria)</button><button class="filter-btn" data-filter="international">🌍 International</button><button class="filter-btn" data-filter="luxury">🏆 Luxury</button><button class="filter-btn" data-filter="budget">💰 Budget Friendly</button></div>
+                <div class="search-box"><i class="fas fa-search"></i><input type="text" id="searchInput" placeholder="Search packages..."></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages-grid-section">
+        <div class="container">
+            <div class="packages-grid-container" id="packagesContainer"></div>
+            <div class="load-more-wrapper" id="loadMoreWrapper"><button class="btn-load-more" id="loadMoreBtn">Load More Packages <i class="fas fa-arrow-down"></i></button></div>
+        </div>
+    </section>
+
+    <section class="custom-package-cta">
+        <div class="container"><div class="custom-cta-wrapper"><i class="fas fa-gem"></i><h2>Don't See Your Dream Package?</h2><p>Tell us what you want and we'll create a custom travel experience tailored just for you.</p><div class="custom-cta-buttons"><a href="contact.html" class="btn btn-primary">Plan Custom Trip</a><a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I%20want%20to%20create%20a%20custom%20travel%20package." class="btn btn-outline-light" target="_blank"> Ask on WhatsApp</a></div></div></div>
+    </section>
+
+    
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">STAY IN MOTION<span class="footer-logo-sub">Travel and Tours</span></div>
+                <p class="footer-text">Nigeria's premier luxury travel agency, crafting unforgettable journeys since 2015.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="visa.html">Visa Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cancellation.html">Cancellation Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers</p>
+                <form class="newsletter-form" action="https://formsubmit.co/stayinmotionenterprise@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Newsletter Subscriber!">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Stay In Motion Travel and Tours! You'll receive our latest travel updates and exclusive offers.">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p style="font-size: 0.7rem; margin-top: 8px; color: var(--gray);">No spam, unsubscribe anytime.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stay In Motion Travel and Tours. All rights reserved.</p>
+            <p>Created by <a href="https://wa.me/2349074272243?text=Hello%20Rokweb%20Creatives%2C%20I%20would%20like%20to%20build%20a%20professional%20website%20for%20my%20business.%20Kindly%20share%20your%20process%2C%20pricing%2C%20and%20timeline." target="_blank" class="credit-link">Rokweb Creatives</a></p>
+        </div>
+    </div>
+</footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/2348026641531?text=Hello%20Stay%20In%20Motion%2C%20I%20just%20saw%20your%20packages%20page." class="floating-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span class="pulse"></span></a>
+
+    <script src="js/script.js"></script>
+    <script src="js/package.js"></script>
+</body>
+</html>
